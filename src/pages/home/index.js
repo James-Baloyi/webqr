@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Button, Spinner } from 'reactstrap';
+import { Row, Col, Button, Spinner } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQrcode } from '@fortawesome/free-solid-svg-icons'
 
@@ -31,7 +31,7 @@ export default class Index extends Component {
     const { loading } = this.state;
 
     return (
-      <Container>
+      <React.Fragment>
         <Row className="pt-5 justify-content-center">
 
           {!loading && <Col xs="auto" className="justify-content-center text-center d-flex flex-column">
@@ -42,7 +42,7 @@ export default class Index extends Component {
           {loading && <Spinner style={{ width: '5rem', height: '5rem', color: '#81cfe0' }} type="grow" className="mt-4 align-self-center" />}
 
         </Row>
-      </Container>
+      </React.Fragment>
     )
   }
 }

@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import postReducer from "./postReducer";
+import qrReducer from "./qrReducer";
 
 export default combineReducers({
-    posts: postReducer,
+    qr: qrReducer,
 });
