@@ -13,6 +13,7 @@ import store from './store/index';
 
 import home from "./pages/home/index";
 import scan from "./pages/scan/index";
+import result from "./pages/result/index";
 // import about from "./pages/about";
 // import posts from "./pages/posts";
 // import login from "./pages/login";
@@ -29,6 +30,7 @@ class App extends Component {
             <Switch>
               <Route exact path='/' component={home} />
               <Route exact path='/scan' component={scan} />
+              <Route exact path='/result' component={result} />
               {/* <Route exact path='/about' component={about} />
               <Route exact path='/login' component={login} />
               <PrivateRoute exact path='/posts' component={posts} /> */}
