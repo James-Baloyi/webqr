@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faQrcode } from '@fortawesome/free-solid-svg-icons'
+
 import logo from './logo.svg';
 import './App.scss';
 import { Provider } from "react-redux";
@@ -12,6 +15,9 @@ import home from "./pages/home/index";
 // import about from "./pages/about";
 // import posts from "./pages/posts";
 // import login from "./pages/login";
+
+
+library.add(faQrcode);
 
 class App extends Component {
   render() {
