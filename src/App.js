@@ -12,6 +12,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import store from './store/index';
 
 import home from "./pages/home/index";
+import scan from "./pages/scan/index";
 // import about from "./pages/about";
 // import posts from "./pages/posts";
 // import login from "./pages/login";
@@ -27,6 +28,7 @@ class App extends Component {
           <div className="App">
             <Switch>
               <Route exact path='/' component={home} />
+              <Route exact path='/scan' component={scan} />
               {/* <Route exact path='/about' component={about} />
               <Route exact path='/login' component={login} />
               <PrivateRoute exact path='/posts' component={posts} /> */}
