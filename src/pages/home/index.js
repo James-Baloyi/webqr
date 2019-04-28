@@ -25,7 +25,6 @@ export default class Index extends Component {
     }, 1000)
   }
 
-
   render() {
 
     const { loading } = this.state;
