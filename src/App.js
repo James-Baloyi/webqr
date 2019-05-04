@@ -30,6 +30,7 @@ class App extends Component {
             <Route exact path='/' component={home} />
             <Route exact path='/scan' component={scan} />
             <Route exact path='/result' component={result} />
+            
             {/* <Route exact path='/about' component={about} />
               <Route exact path='/login' component={login} />
               <PrivateRoute exact path='/posts' component={posts} /> */}
